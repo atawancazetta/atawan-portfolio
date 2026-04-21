@@ -11,7 +11,7 @@
 <body>
     <!-- MENU DE NAVEGAÇÃO -->
     <nav>
-        <div class="logo"><h1>&lt;/&gt; Atawan Cazetta <strong>Desenvolvedor</strong></h1></div>
+        <div class="logo"><span>&lt;/&gt; Atawan Cazetta <strong>Desenvolvedor</strong></span></div>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#sobre">Sobre</a></li>
@@ -30,8 +30,8 @@
                 <h1>Atawan Santos Cazetta</h1>
                 <h3><span id="typing-text"></span><span class="cursor">|</span></h3>
                 <div class="hero-btns">
-                    <a href="https://www.linkedin.com/in/atawan-cazetta-7b5992371?utm_source=share_via&utm_content=profile&utm_medium=member_android " target="_blank" class="btn-primary">Acesse meu Linkedin <i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/atawancazetta" target="_blank" class="btn-secondary">Acesse meu GitHub <i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/atawan-cazetta-7b5992371" target="_blank" rel="noopener" class="btn-primary">Acesse meu Linkedin <i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/atawancazetta" target="_blank" rel="noopener" class="btn-secondary">Acesse meu GitHub <i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
             <img src="./imagens/FotodePerfil.jpeg" alt="Atawan Cazetta" class="profile-pic">
@@ -74,10 +74,32 @@ A experiência com redes me trouxe uma visão diferenciada, principalmente em co
     <section id="projetos" class="portfolio-section">
         <h2>Veja alguns projetos recentes</h2>
         <div class="portfolio-grid">
-            <a href="https://atawancazetta.github.io/Projeto-Dev-Links/"><img src="./imagens/PreviewDiscover.jpg" alt="Projeto"></a>
-            <a href="https://atawancazetta.github.io/Projeto-ClipMaker-NLW/"><img src="./imagens/PreviewClipMaker.png" alt="Projeto"></a>
+            <div class="portfolio-item">
+                <a href="https://atawancazetta.github.io/Projeto-Dev-Links/" target="_blank">
+                    <img src="./imagens/PreviewDiscover.jpg" alt="Projeto DevLinks">
+                </a>
+                <div class="portfolio-info">
+                    <h3>DevLinks</h3>
+                    <p>Agregador de links para cartão de visitas online, com interface moderna e responsiva.</p>
+                    <div class="tech-tags">
+                        <span>HTML/CSS</span><span>JavaScript</span><span>Git</span><span>Figma</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <a href="https://atawancazetta.github.io/Projeto-ClipMaker-NLW/" target="_blank">
+                    <img src="./imagens/PreviewClipMaker.png" alt="Projeto ClipMaker">
+                </a>
+                <div class="portfolio-info">
+                    <h3>ClipMaker</h3>
+                    <p>Web experimental com IA para identificar e cortar momentos virais em vídeos automaticamente.</p>
+                    <div class="tech-tags">
+                        <span>Gemini AI</span><span>Tailwind</span><span>GSAP</span><span>Cloudinary</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <a href="https://github.com/atawancazetta" target="_blank" class="btn-secondary">Veja mais +</a>
+        
     </section>
 
     <!-- SERVIÇOS -->
@@ -89,7 +111,7 @@ A experiência com redes me trouxe uma visão diferenciada, principalmente em co
             <div class="service-card"><i class="fa-solid fa-gauge-high"></i><h1>Otimização de Site</h1><p>Melhore a velocidade e a performance do seu site com otimizações técnicas, garantindo uma navegação rápida e eficiente.</p></div>
            
         </div>
-        <a href="http://wa.me/5518981790178" target="_blank" class="btn-primary">Quero saber mais <i class="fa-brands fa-whatsapp"></i></a>
+        
     </section>
 
     <!-- CONTATO -->
@@ -97,9 +119,18 @@ A experiência com redes me trouxe uma visão diferenciada, principalmente em co
         <h1>Entre em Contato</h1>
         <p>Entre em contato comigo através das opções abaixo:</p>
         <div class="contact-container">
-            <div class="contact-item"><i class="fa-brands fa-whatsapp"></i><p>Whatsapp<br>(18)98179-0178</p></div>
-            <div class="contact-item"><i class="fa-solid fa-envelope"></i><p>E-mail<br>atawan.s.c@hotmail.com</p></div>
-            <div class="contact-item"><i class="fa-solid fa-location-dot"></i><p>Localização<br>Santo Anastácio - SP, Brasil</p></div>
+            <a href="https://wa.me/5518981790178" target="_blank" class="contact-item">
+                <i class="fa-brands fa-whatsapp"></i>
+                <p>Whatsapp<br>(18)98179-0178</p>
+            </a>
+            <a href="mailto:atawan.s.c@hotmail.com" class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <p>E-mail<br>atawan.s.c@hotmail.com</p>
+            </a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Santo+Anastácio+-+SP" target="_blank" class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Localização<br>Santo Anastácio - SP, Brasil</p>
+            </a>
         </div>
         <div class="social-media">
             <p><strong>Ou me siga nas Redes Sociais</strong></p>
