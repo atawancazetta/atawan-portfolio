@@ -357,25 +357,79 @@ footer {
     section h1 { font-size: 1.8rem; }
     
     header h1 { font-size: 2.2rem; }
+    header h3 { 
+        min-height: auto; /* Remove min-height para permitir fluxo natural do texto */
+        margin-bottom: 20px; /* Ajusta a margem inferior */
+    }
     .profile-pic {
         width: 250px;
         height: 250px;
+        margin-bottom: 30px; /* Adiciona espaço abaixo da imagem quando empilhada */
     }
     .hero-content { 
         flex-direction: column-reverse; 
         text-align: center; 
+        gap: 20px; /* Reduz o espaçamento entre os elementos */
     }
     header .hero-text { text-align: center; }
-    .hero-btns { justify-content: center; }
+    .hero-btns { 
+        justify-content: center; 
+        flex-direction: column; /* Empilha os botões verticalmente */
+        gap: 15px; /* Reduz o espaçamento entre os botões */
+    }
     .hero-btns a { width: 100%; justify-content: center; }
 
     /* Sobre Mim */
-    .about-section { flex-direction: column; text-align: center; }
+    .about-section { 
+        flex-direction: column; 
+        text-align: center; 
+        gap: 30px; /* Reduz o espaçamento */
+    }
     .about-text h1 { text-align: center; }
     .about-img img { 
         max-width: 100%; 
         box-shadow: 10px 10px 0px var(--cor-principal); /* Sombra menor no mobile */
     }
     
-    .skills-container { grid-template-columns: 1fr; }
+    /* Skills */
+    .skills-container { 
+        grid-template-columns: 1fr; 
+        gap: 30px; /* Reduz o espaçamento */
+    }
+    .stats-list { 
+        grid-template-columns: 1fr; /* Empilha as estatísticas verticalmente */
+        gap: 15px; /* Reduz o espaçamento */
+    }
+    .stats-list li { padding: 20px; } /* Ajusta o padding dos cards de estatísticas */
+    .stats-list strong { font-size: 1.8rem; } /* Reduz ligeiramente o tamanho da fonte */
+
+    /* Portfólio / Cases */
+    .portfolio-grid {
+        grid-template-columns: 1fr; /* Uma única coluna para os itens do portfólio */
+        gap: 20px; /* Reduz o espaçamento */
+    }
+    .portfolio-item img { height: 180px; } /* Ajusta a altura da imagem */
+    .portfolio-info { padding: 20px; } /* Ajusta o padding */
+    .portfolio-info h3 { font-size: 1.2rem; } /* Ajusta o tamanho da fonte */
+    .portfolio-info p { font-size: 0.9rem; } /* Ajusta o tamanho da fonte */
+
+    /* Serviços */
+    .services-grid {
+        grid-template-columns: 1fr; /* Uma única coluna para os cards de serviço */
+        gap: 20px; /* Reduz o espaçamento */
+    }
+    .service-card { padding: 30px; } /* Ajusta o padding */
+    .service-card i { font-size: 2rem; margin-bottom: 15px; } /* Ajusta o tamanho do ícone e margem */
+    .service-card h1 { font-size: 1.3rem; margin-bottom: 10px; } /* Ajusta o tamanho da fonte e margem */
+    .service-card p { font-size: 0.9rem; } /* Ajusta o tamanho da fonte */
+
+    /* Contato */
+    .contact-container { gap: 30px; margin-top: 30px; } /* Reduz o espaçamento e margem */
+    .contact-item i { font-size: 1.8rem; } /* Ajusta o tamanho do ícone */
+    .social-media { margin-top: 30px; } /* Ajusta a margem */
+    .social-icons { gap: 15px; } /* Reduz o espaçamento */
+    .social-icons a { width: 45px; height: 45px; font-size: 1.3rem; } /* Ajusta o tamanho dos ícones sociais */
+
+    /* Footer */
+    footer { padding: 20px; font-size: 0.9rem; } /* Ajusta o padding e tamanho da fonte */
 }
